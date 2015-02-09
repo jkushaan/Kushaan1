@@ -1,5 +1,5 @@
 <xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="controls_whileUntil" id="1" inline="false" x="92" y="77">
+  <block type="controls_whileUntil" id="1" inline="false" x="110" y="100">
     <field name="MODE">UNTIL</field>
     <value name="NUMBER">
       <block type="sensor_button" id="2">
@@ -14,18 +14,42 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="led_select" id="5" inline="true">
-            <field name="ACTION">FLASH</field>
-            <value name="LED">
-              <block type="math_number" id="31">
-                <field name="NUM">4</field>
-              </block>
-            </value>
+          <block type="movement_right" id="7">
             <next>
-              <block type="oled_color" id="6">
-                <field name="OBJECT">GREEN</field>
+              <block type="led_select" id="5" inline="true">
+                <field name="ACTION">FLASH</field>
+                <value name="LED">
+                  <block type="math_number" id="31">
+                    <field name="NUM">4</field>
+                  </block>
+                </value>
                 <next>
-                  <block type="movement_right" id="7"></block>
+                  <block type="oled_color" id="6">
+                    <field name="OBJECT">GREEN</field>
+                    <next>
+                      <block type="oled_cleardisplay" id="83">
+                        <next>
+                          <block type="oled_setcursor" id="93" inline="true">
+                            <value name="STARTX">
+                              <block type="math_number" id="100">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
+                            <value name="STARTY">
+                              <block type="math_number" id="124">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="oled_drawtext" id="195">
+                                <field name="TEXT">YOLO EVERYBODY</field>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
                 </next>
               </block>
             </next>
@@ -39,18 +63,42 @@
               </block>
             </value>
             <statement name="DO0">
-              <block type="led_select" id="10" inline="true">
-                <field name="ACTION">FLASH</field>
-                <value name="LED">
-                  <block type="math_number" id="38">
-                    <field name="NUM">4</field>
-                  </block>
-                </value>
+              <block type="movement_left" id="11">
                 <next>
-                  <block type="oled_color" id="67">
-                    <field name="OBJECT">BLACK</field>
+                  <block type="led_select" id="10" inline="true">
+                    <field name="ACTION">FLASH</field>
+                    <value name="LED">
+                      <block type="math_number" id="38">
+                        <field name="NUM">4</field>
+                      </block>
+                    </value>
                     <next>
-                      <block type="movement_left" id="11"></block>
+                      <block type="oled_color" id="67">
+                        <field name="OBJECT">BLACK</field>
+                        <next>
+                          <block type="oled_cleardisplay" id="213">
+                            <next>
+                              <block type="oled_setcursor" id="237" inline="true">
+                                <value name="STARTX">
+                                  <block type="math_number" id="244">
+                                    <field name="NUM">10</field>
+                                  </block>
+                                </value>
+                                <value name="STARTY">
+                                  <block type="math_number" id="252">
+                                    <field name="NUM">10</field>
+                                  </block>
+                                </value>
+                                <next>
+                                  <block type="oled_drawtext" id="261">
+                                    <field name="TEXT">Herro!</field>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
                     </next>
                   </block>
                 </next>
@@ -72,7 +120,30 @@
                       </block>
                     </value>
                     <next>
-                      <block type="movement_forward" id="15"></block>
+                      <block type="oled_cleardisplay" id="270">
+                        <next>
+                          <block type="oled_setcursor" id="279" inline="true">
+                            <value name="STARTX">
+                              <block type="math_number" id="286">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
+                            <value name="STARTY">
+                              <block type="math_number" id="293">
+                                <field name="NUM">10</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="oled_drawtext" id="302">
+                                <field name="TEXT">GO AWAY PRANAY</field>
+                                <next>
+                                  <block type="movement_forward" id="15"></block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
                     </next>
                   </block>
                 </statement>
