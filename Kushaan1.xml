@@ -154,8 +154,8 @@
                                   </block>
                                 </value>
                                 <next>
-                                  <block type="oled_drawtext" id="38">
-                                    <field name="TEXT">GO AWAY PRANAY</field>
+                                  <block type="oled_drawtext" id="128">
+                                    <field name="TEXT">POOP ATTACK</field>
                                     <next>
                                       <block type="robot_delay" id="39" inline="true">
                                         <value name="DELAY">
