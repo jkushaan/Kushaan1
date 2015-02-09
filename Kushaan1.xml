@@ -9,8 +9,8 @@
     <statement name="DO">
       <block type="controls_if" id="3" inline="false">
         <value name="IF0">
-          <block type="sensor_object" id="4">
-            <field name="OBJECT">LEFTFRONT</field>
+          <block type="sensor_light" id="246">
+            <field name="LIGHT">LEFT</field>
           </block>
         </value>
         <statement name="DO0">
@@ -67,8 +67,8 @@
         <next>
           <block type="controls_if" id="16" inline="false">
             <value name="IF0">
-              <block type="sensor_object" id="17">
-                <field name="OBJECT">RIGHTFRONT</field>
+              <block type="sensor_light" id="262">
+                <field name="LIGHT">RIGHT</field>
               </block>
             </value>
             <statement name="DO0">
@@ -125,8 +125,8 @@
             <next>
               <block type="controls_if" id="29" inline="false">
                 <value name="IF0">
-                  <block type="sensor_object" id="30">
-                    <field name="OBJECT">REAR</field>
+                  <block type="sensor_light" id="276">
+                    <field name="LIGHT">REAR</field>
                   </block>
                 </value>
                 <statement name="DO0">
